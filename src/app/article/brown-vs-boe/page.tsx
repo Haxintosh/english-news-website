@@ -16,72 +16,79 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+    title: "A Nation Divided: Segregation in Schools Sparks Protest",
     subtitle:
-      "Public outrage erupts following a controversial guilty verdict in a high-profile murder trial, as critics argue systemic prejudice and rushed judgment doomed a boy to the electric chair.",
-    author: "Akram Rozakhunov",
-    date: "October 5, 1954",
-    readTime: "6 min read",
+      "Following the Supreme Court’s Brown v. Board of Education decision, backlash against school integration erupts across the South. Civil rights leaders call for empathy and equality, while resistance grows louder..",
+    author: "Jiacheng Liu",
+    date: "October 12, 1957",
+    readTime: "10 min read",
     category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/brownvsboe.webp?height=720&width=1280",
     content: DOMPurify.sanitize(`
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+      <p>
+        Three years after the landmark Supreme Court ruling in <strong>Brown v. Board of Education</strong>, the nation remains sharply divided over public school integration. While the Court declared segregation “inherently unequal,” progress has been slow and, in some places, violently opposed. From Little Rock to Washington, citizens are taking sides—and taking to the streets.
+      </p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
+      <p>
+        In Arkansas this month, nine African American students—now known as the “Little Rock Nine”—attempted to enter Central High School under federal protection. They were met not only by angry mobs, but by the Arkansas National Guard, deployed by Governor Orval Faubus to block their entry. President Eisenhower eventually intervened, sending federal troops to escort the students inside, but the message was clear: the battle for equality is far from over.
+      </p>
 
-      <h2>Advanced Capabilities</h2>
+      <p>
+        “These children showed more courage than most grown men,” said NAACP representative Daisy Bates. “All they asked was to learn. What they received was hatred, threats, and fear.”
+      </p>
 
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
+      <h2>Resistance and Reflection</h2>
 
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
+      <p>
+        Across the South, protests, boycotts, and legal obstructions continue to delay integration. Some states have shut down public schools entirely to avoid compliance. Segregationist groups frame their resistance as a defense of tradition and local control. But civil rights advocates argue that such actions reveal a deeper unwillingness to confront the nation’s legacy of racial injustice.
+      </p>
 
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
+      <p>
+        “We’re not just debating education,” said Reverend Thomas H. Carter of Birmingham. “We’re debating whether our laws and hearts will protect all citizens equally—or just those who look like the majority.”
+      </p>
 
-      <h2>Technical Innovations</h2>
+      <p>
+        The tension has exposed a troubling apathy in many parts of the country. While some white citizens are appalled by the violence, others remain silent. Newspapers in northern cities have run editorials condemning segregation, but on the ground, little has changed. Many families quietly accept the status quo, even when they privately disagree with it.
+      </p>
 
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
+      <p>
+        “Apathy is not neutrality,” said social psychologist Dr. June Hart. “It’s complicity. Injustice survives not only through action—but through indifference.”
+      </p>
 
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
+      <h2>Justice on Trial</h2>
 
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
+      <p>
+        For some, the integration crisis raises uncomfortable parallels with the nation’s legal system. Just as certain school boards are accused of obstructing equality, critics warn that juries across America may be failing in their duty to ensure impartial justice—especially when race and class are involved.
+      </p>
 
-      <h2>Industry Reactions</h2>
+      <p>
+        Recent headlines include the controversial conviction and execution of a 16-year-old boy for the murder of his father. Though legally sanctioned, the trial has sparked public outcry, with many alleging that the verdict was influenced more by prejudice than by evidence.
+      </p>
 
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
+      <p>
+        “If a child is condemned not for what he did, but for where he came from or the color of his skin, then we have not one justice system—but two,” said columnist Harold Davies in a recent editorial.
+      </p>
 
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
+      <p>
+        Civil rights leaders emphasize that the courtroom and the classroom are both battlegrounds for the same principle: equal treatment under the law. The question, they argue, is whether the American people are willing to fight for that principle—or allow fear and tradition to stand in the way.
+      </p>
 
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
+      <h2>Looking Forward</h2>
 
-      <h2>Privacy and Ethics</h2>
+      <p>
+        As the school year unfolds, federal courts continue to press for integration, but resistance remains stiff. Organizers are planning further protests and legal challenges, while student-led walkouts are expected in several cities.
+      </p>
 
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
+      <p>
+        In the words of 15-year-old Elizabeth Eckford, one of the Little Rock Nine: “I’m not trying to make history. I just want to sit in a classroom and learn—like everyone else.”
+      </p>
 
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
-
-      <h2>Availability and Integration</h2>
-
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
-    `),
-    tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
-    ],
+      <p>
+        Whether that simple wish can be fulfilled may determine the course of American democracy in the years to come.
+      </p>
+      `),
+    tags: ["Civil Rights", "Education", "Politics", "Supreme Court"],
     relatedArticles: [
       {
         title: "The Cost of Silence: Rosenbergs Executed for Espionage",
@@ -90,10 +97,11 @@ export default function ArticlePage() {
         slug: "julius-rosenberg-execution",
       },
       {
-        title: "A Nation Divided: Segregation in Schools Sparks Protest",
-        image: "/english-news-website/brownvsboe.webp?height=400&width=600",
+        title:
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Politics",
-        slug: "brown-vs-boe",
+        slug: "boy-sentenced-death-bias",
       },
       {
         title:
@@ -212,7 +220,7 @@ export default function ArticlePage() {
                           <Image
                             src={
                               related.image ||
-                              "/english-news-website/placeholder.svg"
+                              "/english-news-websitep/placeholder.svg"
                             }
                             alt={related.title}
                             fill

@@ -16,79 +16,69 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+    title: "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
     subtitle:
-      "Public outrage erupts following a controversial guilty verdict in a high-profile murder trial, as critics argue systemic prejudice and rushed judgment doomed a boy to the electric chair.",
-    author: "Akram Rozakhunov",
-    date: "October 5, 1954",
-    readTime: "6 min read",
-    category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+      "The Soviet Union has launched Sputnik, the first man-made satellite to orbit Earth. Americans react with a mix of awe, fear, and competitive urgency as the Cold War enters orbit.",
+    author: "Victor Zhan",
+    date: "October 4, 1954",
+    readTime: "7 min read",
+    category: "Technology",
+    image: "/english-news-website/sputnik.jpg?height=720&width=1280",
     content: DOMPurify.sanitize(`
+      <p>
+        In a moment that may redefine the 20th century, the Soviet Union announced yesterday that it has successfully launched the world’s first artificial satellite into Earth’s orbit. Named <strong>Sputnik I</strong> (Russian for “companion”), the 184-pound sphere now circles the planet every 96 minutes—an accomplishment many American scientists privately admit is both astonishing and deeply concerning.
+      </p>
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+      <p>
+        “We are witnessing history,” said Dr. Allen Peterson of the U.S. Army Signal Corps. “But it’s history written in Cyrillic.” For Americans, the sight of a communist-built satellite sailing silently overhead has prompted awe, but also fear. If Moscow can put a ball in space, critics ask, how soon until they put bombs there?
+      </p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
+      <p>
+        The launch represents more than a scientific breakthrough—it is a geopolitical thunderclap. Just weeks ago, American officials confidently claimed the United States led the world in missile technology. Today, those assurances ring hollow. Congressional leaders are calling for emergency hearings, while parents and teachers alike are asking whether American education is keeping up.
+      </p>
 
-      <h2>Advanced Capabilities</h2>
+      <p>
+        “This isn’t just a space race,” said Senator Henry Jackson of Washington. “It’s a race for the minds and hearts of the free world. And right now, we are behind.”
+      </p>
 
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
+      <p>
+        But some voices caution against panic. In a statement late Friday, President Eisenhower assured the public that America’s defense capabilities remain strong and that technological competition should not cloud judgment. “We must respond with resolve, not hysteria,” he said. “Let us not forget that courage and patience are part of freedom.”
+      </p>
 
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
+      <h2>A Nation Looking Up—and Inward</h2>
 
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
+      <p>
+        As Americans gaze skyward, many are also turning inward, questioning the confidence that has defined the postwar years. A Gallup poll released this morning shows a sharp spike in public anxiety, with more than 60% of respondents fearing Soviet scientific superiority. Others worry that the nation’s pride may have made it blind to its own complacency.
+      </p>
 
-      <h2>Technical Innovations</h2>
+      <p>
+        “We’ve been telling ourselves we’re the best without asking if it’s still true,” said Dr. Marian Blake, a political psychologist at Columbia University. “Sputnik forces us to confront not only our rivals, but our assumptions.”
+      </p>
 
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
+      <p>
+        That anxiety echoes far beyond the laboratory. In a time when suspicion has become part of daily life—from Cold War politics to courtroom drama—the satellite has become a symbol. Some see it as a triumph of reason and innovation. Others see it as a warning beacon from a rival ideology. The debate mirrors the moral divisions playing out in American homes, schools, and even juries.
+      </p>
 
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
+      <p>
+        “It’s human nature,” said Dr. Blake. “When something unfamiliar enters our sky—or our society—we’re torn between curiosity and fear. Whether it’s a satellite, a new idea, or a boy on trial, the question is: do we react with understanding, or with suspicion?”
+      </p>
 
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
+      <h2>Looking Ahead</h2>
 
-      <h2>Industry Reactions</h2>
+      <p>
+        The Pentagon has called for accelerated investment in rocketry, education, and intelligence. Already, universities are reporting increased interest in science and engineering programs. Yet for many, Sputnik remains more than a technical marvel—it is a mirror, reflecting the doubts, divisions, and aspirations of a nation no longer quite so sure of its place in the world.
+      </p>
 
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
+      <p>
+        One young boy, watching the stars through his backyard telescope in Brooklyn last night, put it simply: “It’s weird to think there’s something up there now. It makes the world feel smaller—and bigger—at the same time.”
+      </p>
 
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
-
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
-
-      <h2>Privacy and Ethics</h2>
-
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
-
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
-
-      <h2>Availability and Integration</h2>
-
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
-    `),
-    tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
-    ],
+      <p>
+        As Sputnik continues its silent loop around the Earth, one thing is clear: the space age has begun, and America is watching.
+      </p>
+      `),
+    tags: ["Technology", "Space", "Future", "USSR", "Sputnik"],
     relatedArticles: [
-      {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
-      },
       {
         title: "A Nation Divided: Segregation in Schools Sparks Protest",
         image: "/english-news-website/brownvsboe.webp?height=400&width=600",
@@ -97,10 +87,16 @@ export default function ArticlePage() {
       },
       {
         title:
-          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
-        image: "/english-news-website/sputnik.jpg?height=400&width=600",
-        category: "Technology",
-        slug: "sputnik-launch",
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
+      },
+      {
+        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
+        image: "/english-news-website/jne.jpeg?height=400&width=600",
+        category: "Politics",
+        slug: "julius-rosenberg-execution",
       },
     ],
   };
@@ -212,7 +208,7 @@ export default function ArticlePage() {
                           <Image
                             src={
                               related.image ||
-                              "/english-news-website/placeholder.svg"
+                              "/english-news-websitep/placeholder.svg"
                             }
                             alt={related.title}
                             fill

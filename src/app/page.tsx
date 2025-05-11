@@ -141,7 +141,7 @@ export default function Home() {
                     category: "Technology",
                     time: "3 hours ago",
                     author: "Victor Zhan",
-                    redirect: "/article/teenager-family",
+                    redirect: "/article/sputnik-launch",
                   },
                   {
                     title:
@@ -165,7 +165,7 @@ export default function Home() {
                     category: "Politics",
                     time: "1 day ago",
                     author: "Akram Rozakhunov",
-                    redirect: "/article/rosenberg",
+                    redirect: "/article/julius-rosenberg-execution",
                   },
                   {
                     title:
@@ -176,7 +176,7 @@ export default function Home() {
                     category: "Business",
                     time: "1 day ago",
                     author: "Jiacheng Liu",
-                    redirect: "/article/suburbia",
+                    redirect: "/article/suburbia-expansion",
                   },
                   {
                     title:
@@ -188,7 +188,7 @@ export default function Home() {
                     category: "Entertainment",
                     time: "2 days ago",
                     author: "Justin Yang",
-                    redirect: "/article/dragnet",
+                    redirect: "/article/crime-shows",
                   },
                 ].map((article, index) => (
                   <Card key={index} className="overflow-hidden">

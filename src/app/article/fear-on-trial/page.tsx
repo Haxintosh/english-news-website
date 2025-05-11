@@ -16,12 +16,11 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Fear on Trial: McCarthyism Grips America",
+    title: "Fear on Trial: McCarthyism Grips America",
     subtitle:
       "As Senator Joseph McCarthy’s anti-communist crusade continues, citizens and celebrities alike face accusations with little to no evidence. Critics warn that fear is replacing justice in American courtrooms and Congress alike.",
     author: "Justin Yang",
-    date: "May 10, 1954",
+    date: "October 3, 1954",
     readTime: "5 min read",
     category: "Politics",
     image: "/english-news-website/mccarthy.jpg?height=720&width=1280",
@@ -57,32 +56,27 @@ export default function ArticlePage() {
 
 <p>In the end, the future of McCarthyism will be shaped not only by congressional hearings, but by the will of the American people. Will we be a nation ruled by fear, or one guided by law, fairness, and truth? That question, perhaps more than any single accusation, defines this troubled chapter in our history.</p>
     `),
-    tags: [
-      "McCarthy",
-      "Red Scare",
-      "Cold War",
-      "Civil Liberties",
-    ],
+    tags: ["McCarthy", "Red Scare", "Cold War", "Civil Liberties"],
     relatedArticles: [
       {
-        title: "A Nation Divided: Segregation in Schools Sparks Protest",
-        image: "/english-news-website/brownvsboe.webp?height=400&width=600",
+        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
+        image: "/english-news-website/jne.jpeg?height=400&width=600",
         category: "Politics",
-        slug: "/brown-vs-boe",
+        slug: "julius-rosenberg-execution",
       },
       {
         title:
-          "How Neural Networks Are Transforming Natural Language Processing",
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
         image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Science",
-        slug: "neural-networks-transforming-nlp",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
       },
       {
         title:
-          "Privacy Concerns Rise as AI Assistants Become More Integrated in Daily Life",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Privacy",
-        slug: "privacy-concerns-ai-assistants",
+          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
+        image: "/english-news-website/sputnik.jpg?height=400&width=600",
+        category: "Technology",
+        slug: "sputnik-launch",
       },
     ],
   };

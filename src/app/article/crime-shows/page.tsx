@@ -16,79 +16,82 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+    title: "Crime Drama Captivates Nation: TV's New Obsession with Justice",
     subtitle:
-      "Public outrage erupts following a controversial guilty verdict in a high-profile murder trial, as critics argue systemic prejudice and rushed judgment doomed a boy to the electric chair.",
-    author: "Akram Rozakhunov",
-    date: "October 5, 1954",
-    readTime: "6 min read",
-    category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+      "From Dragnet to Perry Mason, Americans are tuning in to courtroom and detective dramas like never before. Critics say the obsession reflects a growing public anxiety about justice, guilt, and truth.",
+    author: "Justin Yang",
+    date: "October 3, 1954",
+    readTime: "10 min read",
+    category: "Entertainment",
+    image: "/english-news-website/dragnet.png?height=720&width=1280",
     content: DOMPurify.sanitize(`
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+      <p>
+        “Just the facts, ma’am.” Those four words—uttered by Sergeant Joe Friday on NBC’s <strong>Dragnet</strong>—have become the unofficial motto of American television. As crime dramas surge in popularity, millions of Americans are tuning in every night to watch detectives, lawyers, and judges tackle moral dilemmas and criminal cases with swift, sometimes sanitized, efficiency.
+      </p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
+      <p>
+        With shows like <strong>Perry Mason</strong>, <strong>Highway Patrol</strong>, and <strong>The Lineup</strong>, the nation’s living rooms have become impromptu courtrooms—places where truth is uncovered, criminals are caught, and justice is served in 30 minutes or less. But as the genre grows, some critics are asking whether the TV version of justice truly reflects the complex, messy realities of real-life courts.
+      </p>
 
-      <h2>Advanced Capabilities</h2>
+      <p>
+        “These shows give the impression that every mystery has a clean resolution and every guilty party is obvious,” says Professor Martha Cline, a media analyst at New York University. “But justice in real life is rarely that tidy. There are shades of doubt, layers of prejudice, and a lot of gray between black and white.”
+      </p>
 
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
+      <h2>From Radio to Reality</h2>
 
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
+      <p>
+        Crime programming has exploded since the early days of radio drama, but television has brought a new visual intensity to the genre. Dragnet, adapted from radio in 1951, quickly became a national sensation. Viewers were captivated by its dry realism, uniformed restraint, and its apparent dedication to the truth. Yet even its creators admit it simplifies complex legal processes for dramatic effect.
+      </p>
 
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
+      <p>
+        “We’re not writing law textbooks,” said Dragnet producer Jack Webb in a recent interview. “We’re trying to give people a sense of how law and order works—but in a way that’s compelling to watch.” Webb has received praise for his collaboration with the LAPD, but others argue that the partnership may blur the line between justice and propaganda.
+      </p>
 
-      <h2>Technical Innovations</h2>
+      <h2>Truth on Trial</h2>
 
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
+      <p>
+        The cultural fascination with law enforcement on TV arrives at a moment of national anxiety about crime, communism, and civil unrest. In such a climate, television dramas may reassure the public that the system is sound—that truth always prevails. But reality has proven more complicated.
+      </p>
 
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
+      <p>
+        Earlier this year, a 16-year-old boy was convicted and sentenced to death for the murder of his father. Though the trial received little coverage, several legal observers have since expressed concern that the jury's decision may have been swayed more by bias than evidence.
+      </p>
 
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
+      <p>
+        “People think justice works the way it does on television,” said attorney James Hill, who followed the case. “But there are no dramatic confessions, no smoking guns. Sometimes a child’s life hinges on a juror’s mood—or prejudice.”
+      </p>
 
-      <h2>Industry Reactions</h2>
+      <p>
+        Hill argues that courtroom dramas, while entertaining, may foster dangerous assumptions among jurors and citizens alike. “People walk into jury duty expecting Perry Mason. They don’t expect doubt. And that’s where real danger begins.”
+      </p>
 
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
+      <h2>Justice as Entertainment</h2>
 
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
+      <p>
+        Network executives defend the trend, noting that crime dramas can foster public awareness and civic engagement. “We’re giving viewers a front-row seat to the justice system,” said NBC spokesperson Linda Bartlett. “That can only help society become more informed.”
+      </p>
 
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
+      <p>
+        Yet not all viewers agree. Letters to the editor and radio call-ins reveal a growing unease that the genre may be reinforcing stereotypes—of who commits crimes, how law enforcement operates, and what justice looks like. Minority groups in particular have raised concerns that TV’s portrayal of criminals often reflects racial and class bias.
+      </p>
 
-      <h2>Privacy and Ethics</h2>
+      <p>
+        “If all the criminals on screen look like my neighbors,” said one Harlem resident, “it gets harder for people to see us any other way—even in real courtrooms.”
+      </p>
 
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
+      <h2>The Verdict</h2>
 
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
+      <p>
+        As televisions flicker each evening with scenes of swift justice, Americans continue to wrestle with the gap between image and reality. For many, the courtroom remains a symbol of fairness and truth. But for others, it is increasingly clear that the truth cannot always be packaged in prime time.
+      </p>
 
-      <h2>Availability and Integration</h2>
-
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
-    `),
-    tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
-    ],
+      <p>
+        “Television can inspire us,” said Professor Cline. “But it can also lull us. If we’re not careful, we’ll confuse entertainment with truth—and we’ll forget that justice, in the real world, requires more than a catchphrase and a commercial break.”
+      </p>
+      `),
+    tags: ["Crime", "Television", "Justice", "Entertainment"],
     relatedArticles: [
-      {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
-      },
       {
         title: "A Nation Divided: Segregation in Schools Sparks Protest",
         image: "/english-news-website/brownvsboe.webp?height=400&width=600",
@@ -97,10 +100,16 @@ export default function ArticlePage() {
       },
       {
         title:
-          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
-        image: "/english-news-website/sputnik.jpg?height=400&width=600",
-        category: "Technology",
-        slug: "sputnik-launch",
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
+      },
+      {
+        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
+        image: "/english-news-website/jne.jpeg?height=400&width=600",
+        category: "Politics",
+        slug: "julius-rosenberg-execution",
       },
     ],
   };
@@ -212,7 +221,7 @@ export default function ArticlePage() {
                           <Image
                             src={
                               related.image ||
-                              "/english-news-website/placeholder.svg"
+                              "/english-news-websitep/placeholder.svg"
                             }
                             alt={related.title}
                             fill

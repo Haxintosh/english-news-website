@@ -16,79 +16,79 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+    title: "Apathy or Progress? Suburbia Booms as Cities Struggle",
     subtitle:
-      "Public outrage erupts following a controversial guilty verdict in a high-profile murder trial, as critics argue systemic prejudice and rushed judgment doomed a boy to the electric chair.",
-    author: "Akram Rozakhunov",
-    date: "October 5, 1954",
-    readTime: "6 min read",
-    category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+      "White flight accelerates as more families leave the city for suburban life. Critics claim the shift reflects growing apathy toward urban poverty and inequality, while others call it the American Dream in motion.",
+    author: "Jiacheng Liu",
+    date: "August 17, 1957",
+    readTime: "7 min read",
+    category: "Business",
+    image: "/english-news-website/sub.jpg?height=720&width=1280",
     content: DOMPurify.sanitize(`
+      <p>
+        From Levittown to Lakewood, suburbia is exploding across the American landscape. Rows of identical ranch houses stretch over what used to be farmland, built fast, sold cheap, and marketed as the American Dream. Millions of families are moving out of the city in pursuit of fresh air, safety, and a front lawn of their own. Yet not everyone agrees that this mass migration is cause for celebration.
+      </p>
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+      <p>
+        “We’re seeing what might be the greatest demographic shift in American history,” says urban sociologist Dr. Harold Greene. “But with every highway out of the city, something is being left behind—something we may regret losing.”
+      </p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
+      <h2>The Price of Prosperity</h2>
 
-      <h2>Advanced Capabilities</h2>
+      <p>
+        Spurred by government-backed mortgages, veterans’ benefits, and expanding automobile access, the suburban lifestyle is quickly becoming the middle-class norm. New developments boast schools, shopping centers, and clean streets—all just beyond the city limits. But behind the cheerful brochures lies a more complicated truth.
+      </p>
 
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
+      <p>
+        Many of these new neighborhoods practice informal—if not outright—racial segregation. Minority families are often excluded through redlining, restrictive covenants, and unspoken policies. As white families leave, city neighborhoods experience declining tax revenue, school overcrowding, and aging infrastructure.
+      </p>
 
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
+      <p>
+        “This isn’t just about where people live,” says civil rights advocate Rosa Liddell. “It’s about who we’re willing to live beside—and who we’re willing to forget.”
+      </p>
 
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
+      <p>
+        The divide is growing sharper. While suburban families spend weekends mowing lawns and shopping in air-conditioned malls, their former neighbors in the city face housing shortages, underfunded schools, and rising unemployment. As one inner-city schoolteacher put it: “It’s like we’re watching the lifeboats leave the ship.”
+      </p>
 
-      <h2>Technical Innovations</h2>
+      <h2>A Nation Looking Away</h2>
 
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
+      <p>
+        The shift to suburbia has also changed the national mood. Analysts say it has encouraged a culture of privatization—of lawns over community, of convenience over connection. As families retreat behind fences and carports, public engagement declines.
+      </p>
 
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
+      <p>
+        “There is a growing temptation to believe that comfort is the same as peace,” says Dr. Greene. “But apathy disguised as progress is still apathy.”
+      </p>
 
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
+      <p>
+        That apathy is showing up in civic life—from voter turnout to jury duty. Recent reports suggest that suburban citizens are less likely to serve in urban courts or participate in community hearings. Legal experts warn this could lead to jury pools that do not reflect the diversity or complexity of the populations they judge.
+      </p>
 
-      <h2>Industry Reactions</h2>
+      <p>
+        A recent murder trial of a teenage boy from a poor neighborhood raised these concerns again. Some believe the jury's decision to convict and sentence the boy to death was shaped more by class prejudice than by hard evidence. “He didn’t look like them, didn’t live like them, and they didn’t want to understand him,” said one observer at the trial.
+      </p>
 
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
+      <h2>Progress for Whom?</h2>
 
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
+      <p>
+        Meanwhile, developers and advertisers continue to tout suburbia as the model of progress. Television shows depict smiling housewives, cheerful milkmen, and fathers reading the evening paper in split-level homes. But for many Americans—especially those left behind in the cities—this vision feels more like exclusion than aspiration.
+      </p>
 
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
+      <p>
+        “We’re not asking for picket fences,” said one urban resident in Harlem. “We’re asking for schools that work, jobs that pay, and homes we can afford.”
+      </p>
 
-      <h2>Privacy and Ethics</h2>
+      <p>
+        Whether suburbia represents the fulfillment of the American Dream or its quiet undoing remains to be seen. What is clear, however, is that where people choose to live—and who they choose to leave behind—says as much about our national character as any speech or law.
+      </p>
 
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
-
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
-
-      <h2>Availability and Integration</h2>
-
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
-    `),
-    tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
-    ],
+      <p>
+        “Progress isn’t about where you park your car,” Dr. Greene concluded. “It’s about who you take with you.”
+      </p>
+      `),
+    tags: ["Suburbia", "Urbanization", "Civil Rights", "Demographics"],
     relatedArticles: [
-      {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
-      },
       {
         title: "A Nation Divided: Segregation in Schools Sparks Protest",
         image: "/english-news-website/brownvsboe.webp?height=400&width=600",
@@ -97,10 +97,16 @@ export default function ArticlePage() {
       },
       {
         title:
-          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
-        image: "/english-news-website/sputnik.jpg?height=400&width=600",
-        category: "Technology",
-        slug: "sputnik-launch",
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
+      },
+      {
+        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
+        image: "/english-news-website/jne.jpeg?height=400&width=600",
+        category: "Politics",
+        slug: "julius-rosenberg-execution",
       },
     ],
   };
@@ -212,7 +218,7 @@ export default function ArticlePage() {
                           <Image
                             src={
                               related.image ||
-                              "/english-news-website/placeholder.svg"
+                              "/english-news-websitep/placeholder.svg"
                             }
                             alt={related.title}
                             fill

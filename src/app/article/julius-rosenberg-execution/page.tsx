@@ -16,84 +16,101 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title:
-      "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+    title: "The Cost of Silence: Rosenbergs Executed for Espionag",
     subtitle:
-      "Public outrage erupts following a controversial guilty verdict in a high-profile murder trial, as critics argue systemic prejudice and rushed judgment doomed a boy to the electric chair.",
+      "Julius and Ethel Rosenberg have been executed for allegedly passing atomic secrets to the Soviets. Debate continues over whether the trial was fair or tainted by Cold War hysteria.",
     author: "Akram Rozakhunov",
-    date: "October 5, 1954",
-    readTime: "6 min read",
+    date: "June 20, 1953",
+    readTime: "10 min read",
     category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/jne.jpeg?height=720&width=1280",
     content: DOMPurify.sanitize(`
+      <p>
+          Yesterday evening, at 8:06 p.m., Julius and Ethel Rosenberg were executed in the electric chair at Sing Sing Prison. Convicted of conspiracy to commit espionage, the couple was accused of passing atomic secrets to the Soviet Union during and after World War II. The Rosenbergs maintained their innocence until the end.
+        </p>
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+        <p>
+          Their execution marks a chilling first in American history: the only civilians put to death for espionage in peacetime. Their case, which captivated the nation and divided it bitterly, now enters the history books as one of the most controversial legal proceedings of the 20th century.
+        </p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
+        <p>
+          “This isn’t just a legal matter,” said Professor Alan Rosenthal, a constitutional scholar at Yale. “It’s a mirror of our national psyche—one shaped by fear, suspicion, and the intense pressure to demonstrate loyalty at any cost.”
+        </p>
 
-      <h2>Advanced Capabilities</h2>
+        <h2>The Trial That Shook the Nation</h2>
 
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
+        <p>
+          The Rosenbergs were arrested in 1950, at the height of Cold War paranoia and only months after the Soviet Union successfully tested its first atomic bomb. The prosecution alleged that Julius, an engineer, coordinated a spy ring that included his brother-in-law David Greenglass, who worked at Los Alamos. Ethel was accused of typing up notes.
+        </p>
 
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
+        <p>
+          Critics of the trial have long argued that the case against Ethel was tenuous at best, built more on assumption and association than evidence. Greenglass later admitted that he implicated his sister to protect his own wife from prosecution. The decision to execute both Rosenbergs sparked international protest, with letters pouring into Washington from Rome, Paris, and even Moscow. Pope Pius XII and Albert Einstein both publicly urged clemency.
+        </p>
 
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
+        <p>
+          “Executing these two will not make us safer,” Einstein wrote in an open letter. “But it may make us harder. More frightened. Less just.”
+        </p>
 
-      <h2>Technical Innovations</h2>
+        <h2>A Trial of Fear as Much as Facts</h2>
 
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
+        <p>
+          Many now see the Rosenberg case as the ultimate consequence of an era where fear often replaced reason. Senator Joseph McCarthy’s ongoing campaign to expose communists in government, schools, and Hollywood has only added fuel to the flames. In such an atmosphere, guilt by association is increasingly replacing the presumption of innocence.
+        </p>
 
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
+        <p>
+          “The danger,” said civil rights attorney Grace Parkman, “is that we have allowed ideology to override justice. Even if they were guilty, did they receive a fair trial, or a symbolic one?”
+        </p>
 
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
+        <p>
+          Echoes of this fear-driven justice are being heard across the nation—from immigration courts to juvenile trials. In a recent controversial case, a 16-year-old boy was sentenced to death for the murder of his father. Observers say his working-class background and ethnic identity may have swayed the jury more than the facts ever did.
+        </p>
 
-      <h2>Industry Reactions</h2>
+        <p>
+          “When we let bias guide our decisions, we are no longer defending law,” Parkman added. “We’re defending our comfort. That’s not justice. That’s fear in a robe.”
+        </p>
 
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
+        <h2>Silence, Loyalty, and the Price We Pay</h2>
 
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
+        <p>
+          The Rosenbergs’ silence—whether from defiance or true innocence—played a major role in their fate. Some see their refusal to confess or implicate others as an act of bravery. Others see it as justification for the state’s harshest punishment.
+        </p>
 
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
+        <p>
+          “They died without a word of regret,” said Warden Wilkins at Sing Sing. “If they were innocent, it was a tragic silence. If guilty, it was a proud one.”
+        </p>
 
-      <h2>Privacy and Ethics</h2>
+        <p>
+          But that silence continues to reverberate. In households across America, parents whisper about what to tell their children. Clergy debate whether justice or vengeance was served. In classrooms and jury rooms alike, a new question lingers: Can we ever truly be fair when fear has already rendered its verdict?
+        </p>
 
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
+        <h2>Looking Ahead</h2>
 
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
+        <p>
+          With the executions now complete, attention shifts to how this moment will be remembered. Civil liberties groups are calling for an independent review of the trial, while supporters of the prosecution hail the verdict as a victory for national security.
+        </p>
 
-      <h2>Availability and Integration</h2>
+        <p>
+          For many Americans, however, the Rosenberg case stands not only as a test of law, but as a test of conscience. And as the Cold War deepens, the nation must ask: what other costs are we willing to bear to feel safe?
+        </p>
 
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
-    `),
-    tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
-    ],
+        <p>
+          As one juror in the case said anonymously to the press: “We believed we were doing the right thing. I just pray history agrees with us.”
+        </p>
+      `),
+    tags: ["Espionage", "Cold War", "Justice", "Civil Rights", "Law"],
     relatedArticles: [
-      {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
-      },
       {
         title: "A Nation Divided: Segregation in Schools Sparks Protest",
         image: "/english-news-website/brownvsboe.webp?height=400&width=600",
         category: "Politics",
         slug: "brown-vs-boe",
+      },
+      {
+        title:
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
       },
       {
         title:
@@ -212,7 +229,7 @@ export default function ArticlePage() {
                           <Image
                             src={
                               related.image ||
-                              "/english-news-website/placeholder.svg"
+                              "/english-news-websitep/placeholder.svg"
                             }
                             alt={related.title}
                             fill

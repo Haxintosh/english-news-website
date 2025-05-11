@@ -20,7 +20,7 @@ export default function ArticlePage() {
     subtitle:
       "Postwar studies reveal a changing dynamic in American households, with rising tension between war-hardened fathers and their sons in a booming but emotionally distant culture.",
     author: "Victor Zhan",
-    date: "May 7, 1954",
+    date: "October 3, 1954",
     readTime: "10 min read",
     category: "Culture",
     image: "/english-news-website/placeholder.svg?height=720&width=1280",
@@ -86,24 +86,23 @@ export default function ArticlePage() {
     tags: ["Family", "Psychology", "Future", "Masculinity"],
     relatedArticles: [
       {
-        title: "The Race for AI Dominance: Who's Leading?",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Technology",
-        slug: "race-for-ai-dominance",
+        title: "A Nation Divided: Segregation in Schools Sparks Protest",
+        image: "/english-news-website/brownvsboe.webp?height=400&width=600",
+        category: "Politics",
+        slug: "brown-vs-boe",
       },
       {
         title:
-          "How Neural Networks Are Transforming Natural Language Processing",
+          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
         image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Science",
-        slug: "neural-networks-transforming-nlp",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
       },
       {
-        title:
-          "Privacy Concerns Rise as AI Assistants Become More Integrated in Daily Life",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Privacy",
-        slug: "privacy-concerns-ai-assistants",
+        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
+        image: "/english-news-website/jne.jpeg?height=400&width=600",
+        category: "Politics",
+        slug: "julius-rosenberg-execution",
       },
     ],
   };
