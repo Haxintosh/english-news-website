@@ -43,11 +43,6 @@ export default function Home() {
               Technology
             </Link>
             <Link
-              href="/"
-              className="font-medium text-muted-foreground hover:text-foreground">
-              Entertainment
-            </Link>
-            <Link
               href="/crossword"
               className="font-medium text-muted-foreground hover:text-foreground">
               Crossword
