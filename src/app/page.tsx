@@ -129,6 +129,7 @@ export default function Home() {
                     category: "Politics",
                     time: "2 hours ago",
                     author: "Justin Yang",
+                    redirect: "/article/mccarthyism",
                   },
                   {
                     title:
@@ -140,6 +141,7 @@ export default function Home() {
                     category: "Technology",
                     time: "3 hours ago",
                     author: "Victor Zhan",
+                    redirect: "/article/teenager-family",
                   },
                   {
                     title:
@@ -151,6 +153,7 @@ export default function Home() {
                     category: "Politics",
                     time: "5 hours ago",
                     author: "Jiacheng Liu",
+                    redirect: "/article/brown-vs-boe",
                   },
                   {
                     title:
@@ -162,6 +165,7 @@ export default function Home() {
                     category: "Politics",
                     time: "1 day ago",
                     author: "Akram Rozakhunov",
+                    redirect: "/article/rosenberg",
                   },
                   {
                     title:
@@ -172,6 +176,7 @@ export default function Home() {
                     category: "Business",
                     time: "1 day ago",
                     author: "Jiacheng Liu",
+                    redirect: "/article/suburbia",
                   },
                   {
                     title:
@@ -183,6 +188,7 @@ export default function Home() {
                     category: "Entertainment",
                     time: "2 days ago",
                     author: "Justin Yang",
+                    redirect: "/article/dragnet",
                   },
                 ].map((article, index) => (
                   <Card key={index} className="overflow-hidden">
@@ -216,8 +222,15 @@ export default function Home() {
                         <span className="text-sm text-muted-foreground">
                           By {article.author}
                         </span>
-                        <Button variant="ghost" size="sm" className="gap-1">
-                          Read more <ArrowRight className="h-4 w-4" />
+                        <Button
+                          variant="ghost"
+                          size="sm"
+                          className="gap-1"
+                          asChild
+                        >
+                          <Link href={article.redirect}>
+                            Read more <ArrowRight className="h-4 w-4" />
+                          </Link>
                         </Button>
                       </div>
                     </CardFooter>

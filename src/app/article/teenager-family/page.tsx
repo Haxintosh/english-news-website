@@ -23,7 +23,7 @@ export default function ArticlePage() {
     date: "May 7, 1954",
     readTime: "10 min read",
     category: "Culture",
-    image: "/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/placeholder.svg?height=720&width=1280",
     content: DOMPurify.sanitize(`
       <p>
         The American household may appear more stable than ever, but experts warn of a quiet crisis brewing beneath the surface. A landmark study released this week by the American Institute of Family Relations reveals that the emotional gap between fathers and sons is widening in postwar families, and that this generational disconnect may be more than just a passing phase—it could be reshaping the very foundation of American life.
@@ -87,21 +87,21 @@ export default function ArticlePage() {
     relatedArticles: [
       {
         title: "The Race for AI Dominance: Who's Leading?",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Technology",
         slug: "race-for-ai-dominance",
       },
       {
         title:
           "How Neural Networks Are Transforming Natural Language Processing",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Science",
         slug: "neural-networks-transforming-nlp",
       },
       {
         title:
           "Privacy Concerns Rise as AI Assistants Become More Integrated in Daily Life",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Privacy",
         slug: "privacy-concerns-ai-assistants",
       },
@@ -169,7 +169,7 @@ export default function ArticlePage() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg mb-8">
               <Image
-                src={article.image || "/placeholder.svg"}
+                src={article.image || "/english-news-website/placeholder.svg"}
                 alt={article.title}
                 fill
                 className="object-cover"
@@ -213,7 +213,10 @@ export default function ArticlePage() {
                       <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image
-                            src={related.image || "/placeholder.svg"}
+                            src={
+                              related.image ||
+                              "/english-news-websitep/placeholder.svg"
+                            }
                             alt={related.title}
                             fill
                             className="object-cover transition-transform hover:scale-105"
