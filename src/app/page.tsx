@@ -112,9 +112,9 @@ export default function Home() {
             <div className="flex justify-end mb-6">
               <TabsList>
                 <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="politicsA">Politics</TabsTrigger>
-                <TabsTrigger value="business">Business</TabsTrigger>
-                <TabsTrigger value="technology">Technology</TabsTrigger>
+                <TabsTrigger value="politics" disabled>Politics</TabsTrigger>
+                <TabsTrigger value="business" disabled>Business</TabsTrigger>
+                <TabsTrigger value="technology" disabled>Technology</TabsTrigger>
               </TabsList>
             </div>
             <TabsContent value="all">
