@@ -91,24 +91,23 @@ export default function ArticlePage() {
     tags: ["Civil Rights", "Education", "Politics", "Supreme Court"],
     relatedArticles: [
       {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
-      },
-      {
         title:
-          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+            "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
         image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Politics",
         slug: "boy-sentenced-death-bias",
       },
       {
-        title:
-          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
-        image: "/english-news-website/sputnik.jpg?height=400&width=600",
-        category: "Technology",
-        slug: "sputnik-launch",
+        title: "Fear on Trial: McCarthyism Grips America",
+        image: "/english-news-website/mccarthy.jpg?height=400&width=600",
+        category: "Politics",
+        slug: "fear-on-trial",
+      },
+      {
+        title: "Fathers, Sons, and the New American Family",
+        image: "/english-news-website/teen.jpg?height=400&width=600",
+        category: "Culture",
+        slug: "teenager-family",
       },
     ],
   };

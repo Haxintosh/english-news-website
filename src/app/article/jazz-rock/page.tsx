@@ -16,87 +16,77 @@ import {
 export default function ArticlePage() {
   // Article data
   const article = {
-    title: "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
+    title: "Voices from the Fringe: Jazz and Rock Stir Social Change",
     subtitle:
-      "The Soviet Union has launched Sputnik, the first man-made satellite to orbit Earth. Americans react with a mix of awe, fear, and competitive urgency as the Cold War enters orbit.",
-    author: "Victor Zhan",
-    date: "October 4, 1954",
+        "Jazz and rock 'n' roll are under fire from traditionalists, but young people call them the soundtrack of rebellion and truth. As Elvis tops the charts, America’s youth are asking: Whose voices matter?",
+    author: "Justin Yang",
+    date: "June 2, 1953",
     readTime: "7 min read",
-    category: "Technology",
-    image: "/english-news-website/sputnik.jpg?height=720&width=1280",
+    category: "Entertainment",
+    image: "/english-news-website/jazz-rock.jpg?height=720&width=1280",
     content: DOMPurify.sanitize(`
-      <p>
-        In a moment that may redefine the 20th century, the Soviet Union announced yesterday that it has successfully launched the world’s first artificial satellite into Earth’s orbit. Named <strong>Sputnik I</strong> (Russian for “companion”), the 184-pound sphere now circles the planet every 96 minutes—an accomplishment many American scientists privately admit is both astonishing and deeply concerning.
-      </p>
-
-      <p>
-        “We are witnessing history,” said Dr. Allen Peterson of the U.S. Army Signal Corps. “But it’s history written in Cyrillic.” For Americans, the sight of a communist-built satellite sailing silently overhead has prompted awe, but also fear. If Moscow can put a ball in space, critics ask, how soon until they put bombs there?
-      </p>
-
-      <p>
-        The launch represents more than a scientific breakthrough—it is a geopolitical thunderclap. Just weeks ago, American officials confidently claimed the United States led the world in missile technology. Today, those assurances ring hollow. Congressional leaders are calling for emergency hearings, while parents and teachers alike are asking whether American education is keeping up.
-      </p>
-
-      <p>
-        “This isn’t just a space race,” said Senator Henry Jackson of Washington. “It’s a race for the minds and hearts of the free world. And right now, we are behind.”
-      </p>
-
-      <p>
-        But some voices caution against panic. In a statement late Friday, President Eisenhower assured the public that America’s defense capabilities remain strong and that technological competition should not cloud judgment. “We must respond with resolve, not hysteria,” he said. “Let us not forget that courage and patience are part of freedom.”
-      </p>
-
-      <h2>A Nation Looking Up—and Inward</h2>
-
-      <p>
-        As Americans gaze skyward, many are also turning inward, questioning the confidence that has defined the postwar years. A Gallup poll released this morning shows a sharp spike in public anxiety, with more than 60% of respondents fearing Soviet scientific superiority. Others worry that the nation’s pride may have made it blind to its own complacency.
-      </p>
-
-      <p>
-        “We’ve been telling ourselves we’re the best without asking if it’s still true,” said Dr. Marian Blake, a political psychologist at Columbia University. “Sputnik forces us to confront not only our rivals, but our assumptions.”
-      </p>
-
-      <p>
-        That anxiety echoes far beyond the laboratory. In a time when suspicion has become part of daily life—from Cold War politics to courtroom drama—the satellite has become a symbol. Some see it as a triumph of reason and innovation. Others see it as a warning beacon from a rival ideology. The debate mirrors the moral divisions playing out in American homes, schools, and even juries.
-      </p>
-
-      <p>
-        “It’s human nature,” said Dr. Blake. “When something unfamiliar enters our sky—or our society—we’re torn between curiosity and fear. Whether it’s a satellite, a new idea, or a boy on trial, the question is: do we react with understanding, or with suspicion?”
-      </p>
-
-      <h2>Looking Ahead</h2>
-
-      <p>
-        The Pentagon has called for accelerated investment in rocketry, education, and intelligence. Already, universities are reporting increased interest in science and engineering programs. Yet for many, Sputnik remains more than a technical marvel—it is a mirror, reflecting the doubts, divisions, and aspirations of a nation no longer quite so sure of its place in the world.
-      </p>
-
-      <p>
-        One young boy, watching the stars through his backyard telescope in Brooklyn last night, put it simply: “It’s weird to think there’s something up there now. It makes the world feel smaller—and bigger—at the same time.”
-      </p>
-
-      <p>
-        As Sputnik continues its silent loop around the Earth, one thing is clear: the space age has begun, and America is watching.
-      </p>
+      <p>Across smoky clubs in Harlem and the dance halls of Memphis, a new sound is shaking the foundations of American society. It’s loud, defiant, and full of rhythm. It’s jazz. It’s rock ‘n’ roll. And it’s not going anywhere quietly.</p>
+      
+      <p>Parents and politicians alike are sounding the alarm. Some denounce the music as “jungle noise,” while others fear it will corrupt the moral fiber of the nation’s youth. Yet for many teenagers, the allure is undeniable. “It feels like the music knows what we’re going through,” says 17-year-old Connie Myers from Chicago. “Our parents want us quiet. Rock wants us loud.”</p>
+      
+      <p>The disapproval from older generations only seems to add fuel to the fire. Songs that were once hidden away in jukebox corners now dominate the airwaves. Radio DJs like Alan Freed are popularizing what they call “rock and roll,” blending rhythm and blues with youthful energy — and crossing racial lines in the process.</p>
+      
+      <h2>Race, Rebellion, and Rhythm</h2>
+      
+      <p>While the beat is infectious, the implications run deeper. Jazz and rock ‘n’ roll are more than music—they are acts of cultural defiance. Born from Black communities and long marginalized in the mainstream, these genres now find new life in integrated dance halls and record shops. This cultural mixing is rattling the status quo of segregated America.</p>
+      
+      <p>“Jazz was always dangerous,” says jazz historian Leonard Feather. “It challenged social norms, sexual conventions, and racial hierarchies. Rock is just the next wave of that same revolution.”</p>
+      
+      <p>As artists like Little Richard and Ray Charles electrify stages, white performers such as Elvis Presley are bringing Black music into white homes. To some, this is cultural theft. To others, it’s the beginning of something radical: a shared cultural voice that refuses to be divided by color.</p>
+      
+      <p>Still, many mainstream outlets avoid confronting the music’s origins. “They play Elvis and Pat Boone but don’t tell you where the sound comes from,” says saxophonist Milt Jackson. “The sound came from us. From struggle. From truth.”</p>
+      
+      <h2>Preachers, Politicians, and Panic</h2>
+      
+      <p>The backlash has been swift. Ministers decry the music from pulpits, warning that swing and rock rhythms will lead youth down a path of sin. In some towns, local governments have attempted to ban “race records” or restrict public dances where “negro music” is played. Yet such actions often have the opposite effect — fueling youth curiosity rather than quelling it.</p>
+      
+      <p>Senator James Eastland of Mississippi recently declared that “this so-called music is a threat to American decency.” School boards are debating whether students should be allowed to attend rock concerts. Meanwhile, record sales soar.</p>
+      
+      <p>For the youth, these crackdowns don’t just silence music — they silence identity. “They tell us to shut up, comb our hair, be polite,” says 16-year-old Johnny Delgado from New Jersey. “But this music tells us to be ourselves. To feel things. To shout.”</p>
+      
+      <h2>The Birth of a New Youth Identity</h2>
+      
+      <p>More than just a pastime, jazz and rock ‘n’ roll are giving birth to a new youth culture—one that defines itself by contrast to the conformity of postwar America. Where the previous generation sought stability, this one seeks expression. They wear their collars looser, their hair longer, and their music louder.</p>
+      
+      <p>“There is a restlessness in the hearts of young Americans,” wrote columnist Dorothy Kilgallen last week. “They are not content with the tidy future offered to them. They want to write their own songs, live their own truth.”</p>
+      
+      <p>This hunger for autonomy is not limited to music. It’s seen in fashion, in protest, in the language of slang and dance. In this sense, jazz and rock are not the end but the beginning — the soundtrack to a generational declaration: We are here. And we are listening to something different.</p>
+      
+      <h2>Whose Voice Is It, Anyway?</h2>
+      
+      <p>As the cultural war rages on, one question echoes louder than the amps at a Chuck Berry show: Whose voices matter?</p>
+      
+      <p>For too long, the answer has been clear—those in power, those with money, those who resemble the status quo. But the rise of jazz and rock ‘n’ roll is challenging that narrative. For every parent who turns down the radio, there’s a teenager turning it up. For every record burned in protest, a thousand more are sold in quiet defiance.</p>
+      
+      <p>In the end, music may not solve the nation’s deepest divides. But it may do something just as powerful: help a generation find its voice.</p>
+      
+      <p>And once that voice is found, it’s hard to silence.</p>
       `),
-    tags: ["Technology", "Space", "Future", "USSR", "Sputnik"],
+    tags: ["Youth", "Music", "Social Change"],
     relatedArticles: [
       {
-        title: "Apathy or Progress? Suburbia Booms as Cities Struggle",
-        image: "/english-news-website/sub.jpg?height=400&width=600",
-        category: "Business",
-        slug: "suburbia-expansion",
+        title: "A Nation Divided: Segregation in Schools Sparks Protest",
+        image: "/english-news-website/brownvsboe.webp?height=400&width=600",
+        category: "Politics",
+        slug: "brown-vs-boe",
       },
       {
         title:
-          "Fathers, Sons, and the New American Family",
-        image: "/english-news-website/teen.jpg?height=400&width=600",
-        category: "Culture",
-        slug: "teenager-family",
+            "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
+        image: "/english-news-website/sputnik.jpg?height=400&width=600",
+        category: "Technology",
+        slug: "sputnik-launch",
       },
       {
-        title: "Voices from the Fringe: Jazz and Rock Stir Social Change",
-        image: "/english-news-website/jazz-rock.jpg?height=400&width=600",
+        title: "Crime Drama Captivates Nation: TV's New Obsession with Justice",
+        image: "/english-news-website/dragnet.png?height=400&width=600",
         category: "Entertainment",
-        slug: "jazz-rock",
+        slug: "crime-shows",
       },
     ],
   };

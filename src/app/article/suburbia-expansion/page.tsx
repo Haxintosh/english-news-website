@@ -90,23 +90,23 @@ export default function ArticlePage() {
     tags: ["Suburbia", "Urbanization", "Civil Rights", "Demographics"],
     relatedArticles: [
       {
-        title: "A Nation Divided: Segregation in Schools Sparks Protest",
-        image: "/english-news-website/brownvsboe.webp?height=400&width=600",
-        category: "Politics",
-        slug: "brown-vs-boe",
+        title: "Crime Drama Captivates Nation: TV's New Obsession with Justice",
+        image: "/english-news-website/dragnet.png?height=400&width=600",
+        category: "Entertainment",
+        slug: "crime-shows",
       },
       {
         title:
-          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
-        category: "Politics",
-        slug: "boy-sentenced-death-bias",
+          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
+        image: "/english-news-website/sputnik.jpg?height=400&width=600",
+        category: "Technology",
+        slug: "sputnik-launch",
       },
       {
-        title: "The Cost of Silence: Rosenbergs Executed for Espionage",
-        image: "/english-news-website/jne.jpeg?height=400&width=600",
-        category: "Politics",
-        slug: "julius-rosenberg-execution",
+        title: "Voices from the Fringe: Jazz and Rock Stir Social Change",
+        image: "/english-news-website/jazz-rock.jpg?height=400&width=600",
+        category: "Entertainment",
+        slug: "jazz-rock",
       },
     ],
   };

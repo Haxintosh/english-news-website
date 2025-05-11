@@ -100,24 +100,23 @@ export default function ArticlePage() {
     tags: ["Espionage", "Cold War", "Justice", "Civil Rights", "Law"],
     relatedArticles: [
       {
+        title:
+            "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        category: "Politics",
+        slug: "boy-sentenced-death-bias",
+      },
+      {
         title: "A Nation Divided: Segregation in Schools Sparks Protest",
         image: "/english-news-website/brownvsboe.webp?height=400&width=600",
         category: "Politics",
         slug: "brown-vs-boe",
       },
       {
-        title:
-          "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        title: "Fear on Trial: McCarthyism Grips America",
+        image: "/english-news-website/mccarthy.jpg?height=400&width=600",
         category: "Politics",
-        slug: "boy-sentenced-death-bias",
-      },
-      {
-        title:
-          "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
-        image: "/english-news-website/sputnik.jpg?height=400&width=600",
-        category: "Technology",
-        slug: "sputnik-launch",
+        slug: "fear-on-trial",
       },
     ],
   };
