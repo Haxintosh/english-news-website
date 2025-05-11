@@ -382,7 +382,7 @@ export default function Home() {
                 description:
                   "Postwar studies reveal a changing dynamic in American households, with rising tension between war-hardened fathers and their sons in a booming but emotionally distant culture.",
                 image:
-                  "/english-news-website/placeholder.svg?height=400&width=600",
+                  "/english-news-website/teen.jpg?height=400&width=600",
                 category: "Culture",
                 time: "2 days ago",
                 author: "Victor Zhan",
@@ -394,7 +394,7 @@ export default function Home() {
                 description:
                   "Jazz and rock 'n' roll are under fire from traditionalists, but young people call them the soundtrack of rebellion and truth. As Elvis tops the charts, America’s youth are asking: Whose voices matter?",
                 image:
-                  "/english-news-website/placeholder.svg?height=400&width=600",
+                  "/english-news-website/jazz-rock.jpg?height=400&width=600",
                 category: "Entertainment",
                 time: "3 days ago",
                 author: "Justin Yang",
@@ -437,9 +437,11 @@ export default function Home() {
                       <span className="text-sm text-muted-foreground">
                         By {article.author}
                       </span>
-                      <Button variant="ghost" size="sm" className="gap-1">
-                        Read more <ArrowRight className="h-4 w-4" />
-                      </Button>
+                      <Link href={article.redirect} passHref>
+                        <Button variant="ghost" size="sm" className="gap-1">
+                          Read more <ArrowRight className="h-4 w-4" />
+                        </Button>
+                      </Link>
                     </div>
                   </CardFooter>
                 </div>

@@ -23,7 +23,7 @@ export default function ArticlePage() {
     date: "October 3, 1954",
     readTime: "10 min read",
     category: "Culture",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/teen.jpg?height=720&width=1280",
     content: DOMPurify.sanitize(`
       <p>
         The American household may appear more stable than ever, but experts warn of a quiet crisis brewing beneath the surface. A landmark study released this week by the American Institute of Family Relations reveals that the emotional gap between fathers and sons is widening in postwar families, and that this generational disconnect may be more than just a passing phase—it could be reshaping the very foundation of American life.
