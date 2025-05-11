@@ -24,7 +24,7 @@ export default function ArticlePage() {
     date: "May 10, 1954",
     readTime: "6 min read",
     category: "Politics",
-    image: "/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/placeholder.svg?height=720&width=1280",
     content: DOMPurify.sanitize(`
 
       <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
@@ -85,21 +85,21 @@ export default function ArticlePage() {
     relatedArticles: [
       {
         title: "The Race for AI Dominance: Who's Leading?",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Technology",
         slug: "race-for-ai-dominance",
       },
       {
         title:
           "How Neural Networks Are Transforming Natural Language Processing",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Science",
         slug: "neural-networks-transforming-nlp",
       },
       {
         title:
           "Privacy Concerns Rise as AI Assistants Become More Integrated in Daily Life",
-        image: "/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/placeholder.svg?height=400&width=600",
         category: "Privacy",
         slug: "privacy-concerns-ai-assistants",
       },
@@ -167,7 +167,7 @@ export default function ArticlePage() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg mb-8">
               <Image
-                src={article.image || "/placeholder.svg"}
+                src={article.image || "/english-news-website/placeholder.svg"}
                 alt={article.title}
                 fill
                 className="object-cover"
@@ -211,7 +211,10 @@ export default function ArticlePage() {
                       <Card className="overflow-hidden h-full hover:shadow-md transition-shadow">
                         <div className="relative aspect-video">
                           <Image
-                            src={related.image || "/placeholder.svg"}
+                            src={
+                              related.image ||
+                              "/english-news-website/placeholder.svg"
+                            }
                             alt={related.title}
                             fill
                             className="object-cover transition-transform hover:scale-105"

@@ -95,7 +95,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg?height=720&width=1280"
+                src="/english-news-website/placeholder.svg?height=720&width=1280"
                 alt="Global Climate Summit"
                 fill
                 className="object-cover"
@@ -124,7 +124,8 @@ export default function Home() {
                     title: "Fear on Trial: McCarthyism Grips America",
                     description:
                       "As Senator Joseph McCarthy’s anti-communist crusade continues, citizens and celebrities alike face accusations with little to no evidence. Critics warn that fear is replacing justice in American courtrooms and Congress alike.",
-                    image: "/mccarthy.jpg?height=400&width=600",
+                    image:
+                      "/english-news-website/mccarthy.jpg?height=400&width=600",
                     category: "Politics",
                     time: "2 hours ago",
                     author: "Justin Yang",
@@ -134,7 +135,8 @@ export default function Home() {
                       "New Heights: The USSR Launches Sputnik, Igniting the Space Race",
                     description:
                       "The Soviet Union has launched Sputnik, the first man-made satellite to orbit Earth. Americans react with a mix of awe, fear, and competitive urgency as the Cold War enters orbit.",
-                    image: "/sputnik.jpg?height=400&width=600",
+                    image:
+                      "/english-news-website/sputnik.jpg?height=400&width=600",
                     category: "Technology",
                     time: "3 hours ago",
                     author: "Victor Zhan",
@@ -144,7 +146,8 @@ export default function Home() {
                       "A Nation Divided: Segregation in Schools Sparks Protest",
                     description:
                       "Following the Supreme Court’s Brown v. Board of Education decision, backlash against school integration erupts across the South. Civil rights leaders call for empathy and equality, while resistance grows louder.",
-                    image: "/brownvsboe.webp?height=400&width=600",
+                    image:
+                      "/english-news-website/brownvsboe.webp?height=400&width=600",
                     category: "Politics",
                     time: "5 hours ago",
                     author: "Jiacheng Liu",
@@ -154,7 +157,8 @@ export default function Home() {
                       "The Cost of Silence: Rosenbergs Executed for Espionage",
                     description:
                       "Julius and Ethel Rosenberg have been executed for allegedly passing atomic secrets to the Soviets. Debate continues over whether the trial was fair or tainted by Cold War hysteria.",
-                    image: "/jne.jpeg?height=400&width=600",
+                    image:
+                      "/english-news-website/jne.jpeg?height=400&width=600",
                     category: "Politics",
                     time: "1 day ago",
                     author: "Akram Rozakhunov",
@@ -164,7 +168,7 @@ export default function Home() {
                       "Apathy or Progress? Suburbia Booms as Cities Struggle",
                     description:
                       "White flight accelerates as more families leave the city for suburban life. Critics claim the shift reflects growing apathy toward urban poverty and inequality, while others call it the American Dream in motion.",
-                    image: "/sub.jpg?height=400&width=600",
+                    image: "/english-news-website/sub.jpg?height=400&width=600",
                     category: "Business",
                     time: "1 day ago",
                     author: "Jiacheng Liu",
@@ -174,7 +178,8 @@ export default function Home() {
                       "Crime Drama Captivates Nation: TV's New Obsession with Justice",
                     description:
                       "From Dragnet to Perry Mason, Americans are tuning in to courtroom and detective dramas like never before. Critics say the obsession reflects a growing public anxiety about justice, guilt, and truth.",
-                    image: "/dragnet.png?height=400&width=600",
+                    image:
+                      "/english-news-website/dragnet.png?height=400&width=600",
                     category: "Entertainment",
                     time: "2 days ago",
                     author: "Justin Yang",
@@ -183,7 +188,10 @@ export default function Home() {
                   <Card key={index} className="overflow-hidden">
                     <div className="relative aspect-video">
                       <Image
-                        src={article.image || "/placeholder.svg"}
+                        src={
+                          article.image ||
+                          "/english-news-website/placeholder.svg"
+                        }
                         alt={article.title}
                         fill
                         className="object-cover transition-transform hover:scale-105"
@@ -222,7 +230,7 @@ export default function Home() {
                 <Card className="overflow-hidden">
                   <div className="relative aspect-video">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/english-news-website/placeholder.svg?height=400&width=600"
                       alt="New Healthcare Bill Passes Senate"
                       fill
                       className="object-cover transition-transform hover:scale-105"
@@ -261,7 +269,7 @@ export default function Home() {
                 <Card className="overflow-hidden">
                   <div className="relative aspect-video">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/english-news-website/placeholder.svg?height=400&width=600"
                       alt="Stock Markets Reach All-Time High"
                       fill
                       className="object-cover transition-transform hover:scale-105"
@@ -300,7 +308,7 @@ export default function Home() {
                 <Card className="overflow-hidden">
                   <div className="relative aspect-video">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
+                      src="/english-news-website/placeholder.svg?height=400&width=600"
                       alt="Tech Giant Unveils Revolutionary AI Assistant"
                       fill
                       className="object-cover transition-transform hover:scale-105"
@@ -360,7 +368,8 @@ export default function Home() {
                 title: "Fathers, Sons, and the New American Family",
                 description:
                   "Postwar studies reveal a changing dynamic in American households, with rising tension between war-hardened fathers and their sons in a booming but emotionally distant culture.",
-                image: "/placeholder.svg?height=400&width=600",
+                image:
+                  "/english-news-website/placeholder.svg?height=400&width=600",
                 category: "Culture",
                 time: "2 days ago",
                 author: "Victor Zhan",
@@ -370,7 +379,8 @@ export default function Home() {
                   "Voices from the Fringe: Jazz and Rock Stir Social Change",
                 description:
                   "Jazz and rock 'n' roll are under fire from traditionalists, but young people call them the soundtrack of rebellion and truth. As Elvis tops the charts, America’s youth are asking: Whose voices matter?",
-                image: "/placeholder.svg?height=400&width=600",
+                image:
+                  "/english-news-website/placeholder.svg?height=400&width=600",
                 category: "Entertainment",
                 time: "3 days ago",
                 author: "Justin Yang",
@@ -382,7 +392,9 @@ export default function Home() {
               >
                 <div className="relative w-full md:w-2/5 aspect-video md:aspect-square">
                   <Image
-                    src={article.image || "/placeholder.svg"}
+                    src={
+                      article.image || "/english-news-website/placeholder.svg"
+                    }
                     alt={article.title}
                     fill
                     className="object-cover"
