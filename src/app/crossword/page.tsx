@@ -288,9 +288,9 @@ export default function CrosswordPage() {
                         )}
                         {cell !== "" && (
                           <input
-                            ref={(el) =>
-                              (gridRefs.current[rowIndex][colIndex] = el)
-                            }
+                            ref={(el) => {
+                              gridRefs.current[rowIndex][colIndex] = el;
+                            }}
                             type="text"
                             maxLength={1}
                             value={userAnswers[rowIndex][colIndex]}
