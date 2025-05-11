@@ -82,7 +82,10 @@ export default function CrosswordPage() {
 
   // Handle cell selection
   const handleCellClick = (row: number, col: number) => {
-    if (puzzleData.grid[row][col] === "") return;
+    if (puzzleData.grid[row][col] === "") {
+      setSelectedCell([row, col]);
+      return;
+    }
 
     if (selectedCell && selectedCell[0] === row && selectedCell[1] === col) {
       // Toggle direction if clicking the same cell
@@ -129,12 +132,7 @@ export default function CrosswordPage() {
       setUserAnswers(newAnswers);
 
       if (value !== "") {
-        // Move to next cell
-        if (direction === "across") {
-          moveToNextCell(row, col, 0, 1);
-        } else {
-          moveToNextCell(row, col, 1, 0);
-        }
+        // Allow user to manually navigate without automatic cursor movement
       }
     }
   };
@@ -150,7 +148,12 @@ export default function CrosswordPage() {
     let newCol = col + colOffset;
 
     // Find the next valid cell
-    while (newRow >= 0 && newRow < 9 && newCol >= 0 && newCol < 9) {
+    while (
+      newRow >= 0 &&
+      newRow < 9 &&
+      newCol >= 0 &&
+      newCol < 9
+    ) {
       if (puzzleData.grid[newRow][newCol] !== "") {
         setSelectedCell([newRow, newCol]);
         gridRefs.current[newRow][newCol]?.focus();
@@ -270,15 +273,7 @@ export default function CrosswordPage() {
                         className={`relative w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 border border-border flex items-center justify-center ${
                           cell === ""
                             ? "bg-muted"
-                            : selectedCell &&
-                                selectedCell[0] === rowIndex &&
-                                selectedCell[1] === colIndex
-                              ? "bg-primary/20"
-                              : isCellInCurrentWord(rowIndex, colIndex)
-                                ? "bg-primary/10"
-                                : isCellInCurrentWord(rowIndex, colIndex)
-                                  ? "bg-primary/10"
-                                  : ""
+                            : ""
                         }`}
                       >
                         {cell !== "" && (
@@ -286,30 +281,33 @@ export default function CrosswordPage() {
                             {cell}
                           </span>
                         )}
-                        {cell !== "" && (
-                          <input
-                            ref={(el) => {
-                              gridRefs.current[rowIndex][colIndex] = el;
-                            }}
-                            type="text"
-                            maxLength={1}
-                            value={userAnswers[rowIndex][colIndex]}
-                            onChange={(e) =>
-                              handleInputChange(e, rowIndex, colIndex)
-                            }
-                            onKeyDown={(e) =>
-                              handleKeyDown(e, rowIndex, colIndex)
-                            }
-                            onClick={() => handleCellClick(rowIndex, colIndex)}
-                            className={`w-full h-full text-center font-medium bg-transparent focus:outline-none ${
-                              selectedCell &&
-                              selectedCell[0] === rowIndex &&
-                              selectedCell[1] === colIndex
-                                ? "text-primary"
-                                : ""
-                            }`}
-                          />
-                        )}
+                        <input
+                          ref={(el) => {
+                            gridRefs.current[rowIndex][colIndex] = el;
+                          }}
+                          type="text"
+                          maxLength={1}
+                          value={userAnswers[rowIndex][colIndex]}
+                          onChange={(e) =>
+                            handleInputChange(e, rowIndex, colIndex)
+                          }
+                          onKeyDown={(e) =>
+                            handleKeyDown(e, rowIndex, colIndex)
+                          }
+                          onClick={() => handleCellClick(rowIndex, colIndex)}
+                          className={`w-full h-full text-center font-medium bg-transparent focus:outline-none ${
+                            selectedCell &&
+                            selectedCell[0] === rowIndex &&
+                            selectedCell[1] === colIndex
+                              ? "text-primary"
+                              : cell === ""
+                              ? "text-muted-foreground"
+                              : ""
+                          }`}
+                          style={{
+                            backgroundColor: "transparent",
+                          }}
+                        />
                       </div>
                     )),
                   )}
