@@ -23,38 +23,33 @@ export default function Home() {
               The Shadow of Doubt Gazette
             </Link>
           </div>
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden lg:flex gap-6 mr-2">
             <Link href="/" className="font-medium">
               Home
             </Link>
             <Link
               href="/"
-              className="font-medium text-muted-foreground hover:text-foreground"
-            >
+              className="font-medium text-muted-foreground hover:text-foreground">
               Politics
             </Link>
             <Link
               href="/"
-              className="font-medium text-muted-foreground hover:text-foreground"
-            >
+              className="font-medium text-muted-foreground hover:text-foreground">
               Business
             </Link>
             <Link
               href="/"
-              className="font-medium text-muted-foreground hover:text-foreground"
-            >
+              className="font-medium text-muted-foreground hover:text-foreground">
               Technology
             </Link>
             <Link
               href="/"
-              className="font-medium text-muted-foreground hover:text-foreground"
-            >
+              className="font-medium text-muted-foreground hover:text-foreground">
               Entertainment
             </Link>
             <Link
               href="/crossword"
-              className="font-medium text-muted-foreground hover:text-foreground"
-            >
+              className="font-medium text-muted-foreground hover:text-foreground">
               Crossword
             </Link>
           </nav>
