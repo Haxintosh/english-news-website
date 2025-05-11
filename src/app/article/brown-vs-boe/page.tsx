@@ -115,7 +115,7 @@ export default function ArticlePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="border-b px-4 sm:px-6 lg:px-8">
-        <div className="container flex h-16 items-center justify-between py-4">
+        <div className="container flex h-16 items-center justify-between py-4 max-w-full">
           <div className="flex items-center gap-2">
             <Link href="/" className="text-2xl font-bold">
               The Shadow of Doubt Gazette
@@ -248,8 +248,8 @@ export default function ArticlePage() {
         </article>
 
         <section className="bg-muted py-12 px-4 sm:px-6 lg:px-8">
-          <div className="container">
-            <div className="flex flex-col items-center text-center space-y-4">
+          <div className="container max-w-full">
+            <div className="flex flex-col items-center text-center space-y-4 mx-auto">
               <h2 className="text-3xl font-bold">Stay Updated on Any News</h2>
               <p className="max-w-[600px]">
                 Get the latest updates and breaking news delivered directly to
@@ -268,7 +268,7 @@ export default function ArticlePage() {
         </section>
       </main>
       <footer className="border-t py-6 px-4 sm:px-6 lg:px-8">
-        <div className="container">
+        <div className="container max-w-full">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
               © {new Date().getFullYear()} The Shadow of Doubt Gazette. All
