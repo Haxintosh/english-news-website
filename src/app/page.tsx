@@ -381,8 +381,7 @@ export default function Home() {
                 title: "Fathers, Sons, and the New American Family",
                 description:
                   "Postwar studies reveal a changing dynamic in American households, with rising tension between war-hardened fathers and their sons in a booming but emotionally distant culture.",
-                image:
-                  "/english-news-website/teen.jpg?height=400&width=600",
+                image: "/english-news-website/teen.jpg?height=400&width=600",
                 category: "Culture",
                 time: "2 days ago",
                 author: "Victor Zhan",
@@ -529,7 +528,9 @@ export default function Home() {
         <div className="container max-w-full">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
-              <h3 className="text-lg font-medium mb-4">DailyNews</h3>
+              <h3 className="text-lg font-medium mb-4">
+                The Shadow of Doubt Gazette
+              </h3>
               <p className="text-sm text-muted-foreground">
                 Delivering accurate and timely news from around the world.
               </p>
@@ -648,7 +649,8 @@ export default function Home() {
           </div>
           <div className="mt-8 border-t pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} DailyNews. All rights reserved.
+              © {new Date().getFullYear()} The Shadow of Doubt Gazette. All
+              rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link

@@ -148,12 +148,7 @@ export default function CrosswordPage() {
     let newCol = col + colOffset;
 
     // Find the next valid cell
-    while (
-      newRow >= 0 &&
-      newRow < 9 &&
-      newCol >= 0 &&
-      newCol < 9
-    ) {
+    while (newRow >= 0 && newRow < 9 && newCol >= 0 && newCol < 9) {
       if (puzzleData.grid[newRow][newCol] !== "") {
         setSelectedCell([newRow, newCol]);
         gridRefs.current[newRow][newCol]?.focus();
@@ -226,7 +221,7 @@ export default function CrosswordPage() {
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2">
             <Link href="/" className="text-2xl font-bold">
-              DailyNews
+              The Shadow of Doubt Gazette
             </Link>
           </div>
           <Button variant="ghost" size="sm" asChild>
@@ -271,9 +266,7 @@ export default function CrosswordPage() {
                       <div
                         key={`${rowIndex}-${colIndex}`}
                         className={`relative w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 border border-border flex items-center justify-center ${
-                          cell === ""
-                            ? "bg-muted"
-                            : ""
+                          cell === "" ? "bg-muted" : ""
                         }`}
                       >
                         {cell !== "" && (
@@ -301,8 +294,8 @@ export default function CrosswordPage() {
                             selectedCell[1] === colIndex
                               ? "text-primary"
                               : cell === ""
-                              ? "text-muted-foreground"
-                              : ""
+                                ? "text-muted-foreground"
+                                : ""
                           }`}
                           style={{
                             backgroundColor: "transparent",
@@ -421,7 +414,8 @@ export default function CrosswordPage() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} DailyNews. All rights reserved.
+              © {new Date().getFullYear()} The Shadow of Doubt Gazette. All
+              rights reserved.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link
