@@ -123,7 +123,7 @@ export default function ArticlePage() {
         </div>
       </header>
       <main className="flex-1">
-        <article className="container py-8">
+        <article className="container py-8 px-5 w-full">
           <div className="mx-auto max-w-3xl">
             <div className="mb-6">
               <Badge className="mb-4">{article.category}</Badge>
