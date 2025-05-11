@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen px-4 sm:px-6 lg:px-8">
       <header className="border-b">
-        <div className="container flex h-16 items-center justify-between py-4">
+        <div className="container flex h-16 items-center justify-between py-4 max-w-full">
           <div className="flex items-center gap-2">
             <Link href="/" className="text-2xl font-bold">
               The Shadow of Doubt Gazette
@@ -52,7 +52,7 @@ export default function Home() {
               Entertainment
             </Link>
             <Link
-              href="/"
+              href="/crossword"
               className="font-medium text-muted-foreground hover:text-foreground"
             >
               Crossword
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="container py-8 px-4 sm:px-6 lg:px-8">
+        <section className="container py-8 px-4 sm:px-6 lg:px-8 mx-auto">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
               <Badge>Breaking News</Badge>
@@ -104,7 +104,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="container py-8 px-4 sm:px-6 lg:px-8">
+        <section className="container py-8 px-4 sm:px-6 lg: mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold tracking-tight">Top Stories</h2>
           </div>
@@ -112,7 +112,7 @@ export default function Home() {
             <div className="flex justify-end mb-6">
               <TabsList>
                 <TabsTrigger value="all">All</TabsTrigger>
-                <TabsTrigger value="politics">Politics</TabsTrigger>
+                <TabsTrigger value="politicsA">Politics</TabsTrigger>
                 <TabsTrigger value="business">Business</TabsTrigger>
                 <TabsTrigger value="technology">Technology</TabsTrigger>
               </TabsList>
@@ -129,7 +129,7 @@ export default function Home() {
                     category: "Politics",
                     time: "2 hours ago",
                     author: "Justin Yang",
-                    redirect: "/article/mccarthyism",
+                    redirect: "/article/fear-on-trial",
                   },
                   {
                     title:
@@ -358,7 +358,7 @@ export default function Home() {
           </Tabs>
         </section>
         <section className="bg-muted py-12 px-4 sm:px-6 lg:px-8">
-          <div className="container">
+          <div className="container mx-auto">
             <div className="flex flex-col items-center text-center space-y-4">
               <h2 className="text-3xl font-bold">Daily Crossword Challenge</h2>
               <p className="text-muted-foreground max-w-[600px]">
@@ -371,7 +371,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="container py-8 px-4 sm:px-6 lg:px-8">
+        <section className="container py-8 px-4 sm:px-6 lg:px-8 mx-auto">
           <h2 className="text-3xl font-bold tracking-tight mb-6">
             Editor's Picks
           </h2>
@@ -386,6 +386,7 @@ export default function Home() {
                 category: "Culture",
                 time: "2 days ago",
                 author: "Victor Zhan",
+                redirect: "/article/teenager-family",
               },
               {
                 title:
@@ -397,6 +398,7 @@ export default function Home() {
                 category: "Entertainment",
                 time: "3 days ago",
                 author: "Justin Yang",
+                redirect: "/article/jazz-rock",
               },
             ].map((article, index) => (
               <Card
@@ -445,7 +447,7 @@ export default function Home() {
             ))}
           </div>
         </section>
-        <section className="container py-8">
+        <section className="container py-8 mx-auto">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-3xl font-bold tracking-tight">Latest News</h2>
             <Button variant="outline">View All</Button>
@@ -500,7 +502,7 @@ export default function Home() {
           </div>
         </section>
         <section className="bg-primary text-primary-foreground py-12 px-4 sm:px-6 lg:px-8">
-          <div className="container">
+          <div className="container mx-auto">
             <div className="flex flex-col items-center text-center space-y-4">
               <h2 className="text-3xl font-bold">
                 Subscribe to Our Newsletter
@@ -522,7 +524,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="border-t py-6">
-        <div className="container">
+        <div className="container max-w-full">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <h3 className="text-lg font-medium mb-4">DailyNews</h3>
