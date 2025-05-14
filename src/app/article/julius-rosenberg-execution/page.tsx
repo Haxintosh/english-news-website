@@ -102,7 +102,7 @@ export default function ArticlePage() {
       {
         title:
             "Boy, 16, Sentenced to Death for Father’s Murder Amid Accusations of Bias",
-        image: "/english-news-website/placeholder.svg?height=400&width=600",
+        image: "/english-news-website/boy.jpg?height=400&width=600",
         category: "Politics",
         slug: "boy-sentenced-death-bias",
       },
