@@ -85,7 +85,7 @@ export default function Home() {
             </div>
             <div className="relative aspect-video overflow-hidden rounded-lg">
               <Image
-                src="/english-news-website/placeholder.svg?height=720&width=1280"
+                src="/english-news-website/boy.jpg?height=720&width=1280"
                 alt="Global Climate Summit"
                 fill
                 className="object-cover"

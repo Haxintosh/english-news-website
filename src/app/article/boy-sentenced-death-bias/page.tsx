@@ -24,63 +24,49 @@ export default function ArticlePage() {
     date: "October 5, 1954",
     readTime: "6 min read",
     category: "Politics",
-    image: "/english-news-website/placeholder.svg?height=720&width=1280",
+    image: "/english-news-website/boy.jpg?height=720&width=1280",
     content: DOMPurify.sanitize(`
 
-      <p>In a highly anticipated event at their headquarters yesterday, tech giant Horizon unveiled their latest breakthrough in artificial intelligence technology: Aura, an AI assistant that promises to revolutionize how we interact with technology.</p>
+      <p><strong>NEW YORK CITY</strong> – In a verdict that has already sparked citywide protest and national debate, a jury of twelve men last night found sixteen-year-old Miguel Alvarez guilty of murdering his father. The sentence: death by electric chair. The decision, reached after nearly nine hours of tense deliberation in a sweltering Manhattan courthouse, has left many questioning the fairness of the American justice system.</p>
 
-      <p>Aura represents a significant leap forward in natural language processing and contextual understanding, according to Horizon's CEO Sarah Williams. "What sets Aura apart is its ability to understand not just what you're asking, but why you're asking it," Williams explained during the keynote presentation.</p>
-
-      <h2>Advanced Capabilities</h2>
-
-      <p>Unlike existing AI assistants that often struggle with complex queries or maintaining context across multiple questions, Aura demonstrated remarkable capabilities during the live demonstration:</p>
-
-      <ul>
-        <li>Contextual memory that retains information across conversations</li>
-        <li>Ability to understand and respond to multi-part questions</li>
-        <li>Natural language generation that mimics human conversation patterns</li>
-        <li>Multimodal understanding, allowing it to process both text and images</li>
-        <li>Real-time learning from interactions to improve responses</li>
-      </ul>
-
-      <p>During the demonstration, Aura successfully handled a series of increasingly complex queries about climate science, maintaining context and providing nuanced responses that impressed the audience of tech journalists and industry analysts.</p>
-
-      <h2>Technical Innovations</h2>
-
-      <p>According to Dr. James Park, Horizon's Chief AI Scientist, Aura is built on a new neural architecture called "Recursive Contextual Framework" (RCF) that allows for more efficient processing of complex language patterns.</p>
-
-      <p>"Traditional transformer models have limitations when it comes to maintaining long-term context," Dr. Park explained. "Our RCF architecture introduces a novel approach to memory management that allows Aura to maintain and reference information across much longer conversations."</p>
-
-      <p>The system runs on Horizon's custom-designed AI chips, which the company claims deliver 3x the performance of previous generation hardware while consuming 40% less energy.</p>
-
-      <h2>Industry Reactions</h2>
-
-      <p>Industry analysts have responded positively to the announcement, with many suggesting that Aura represents a significant step forward in conversational AI.</p>
-
-      <p>"What Horizon demonstrated today goes beyond incremental improvements," said Maria Rodriguez, senior AI analyst at Tech Insights. "The contextual understanding and natural responses position Aura as potentially the most advanced consumer-facing AI assistant we've seen to date."</p>
-
-      <p>However, some experts have expressed caution about the real-world performance of the system. "Demo environments are carefully controlled," noted AI ethics researcher Dr. Thomas Lee. "The true test will be how Aura performs in diverse, unpredictable real-world scenarios."</p>
-
-      <h2>Privacy and Ethics</h2>
-
-      <p>Addressing growing concerns about AI and privacy, Williams emphasized Horizon's commitment to responsible AI development. "Aura processes most queries on-device, minimizing data transmission to our servers," she stated. "And when cloud processing is required, we've implemented end-to-end encryption and strict data retention policies."</p>
-
-      <p>The company also announced the formation of an external AI Ethics Advisory Board comprised of independent experts in ethics, privacy, and digital rights.</p>
-
-      <h2>Availability and Integration</h2>
-
-      <p>Aura will be available next month on Horizon's flagship smartphones and smart home devices, with plans to expand to their entire product ecosystem by the end of the year. The company also announced an API that will allow third-party developers to integrate Aura into their applications.</p>
-
-      <p>"We see Aura not just as a product feature, but as a platform that will transform how people interact with technology across their digital lives," Williams concluded.</p>
-
-      <p>The announcement comes amid increasing competition in the AI assistant space, with several major tech companies expected to announce their own next-generation AI systems in the coming months.</p>
+      <h2>A Jury Room Divided, Then Conformed</h2>
+      
+      <p>According to sources close to the proceedings, the jury entered the room deeply divided. Several jurors, most notably Juror #8, an architect, and Juror #9, an elderly man, expressed grave doubts about the prosecution’s case. “We’re talking about somebody’s life here,” Juror #8 was overheard saying. “Shouldn’t we at least talk about it before we send a boy off to die?”</p>
+      
+      <p>Despite his initial resistance, Juror #8’s arguments were gradually worn down by the relentless pressure of the majority. Juror #3, a small business owner, was particularly forceful: “You can’t let these kids get away with murder. My own son’s the same – angry, disrespectful. I know the type.” Juror #10’s infamous outburst – “You know how those people are, coming from the slums. You can’t believe a word they say” – was met with uncomfortable silence, but little protest.</p>
+      
+      <h2>Doubts Raised – and Dismissed</h2>
+      
+      <p>The prosecution’s case rested on two eyewitnesses: an elderly neighbor who claimed to have heard the murder, and a woman who said she saw the killing through a passing train. Juror #8 questioned their reliability, pointing out the old man’s limp and the woman’s poor eyesight. In a dramatic moment, he even produced a knife identical to the supposed “unique” murder weapon, showing it was easily available.</p>
+      
+      <p>But in this trial, unlike the events of the play, the majority was unmoved. Juror #4, a calm, analytical stockbroker, argued, “The odds are too great for this to be a coincidence. The boy’s story doesn’t add up.” Juror #7, impatient and eager to get to a baseball game, pushed for a quick decision: “We’ve been here all day. Let’s just vote and get out.”</p>
+      
+      <h2>How the Holdouts Fell</h2>
+      
+      <p>Juror #5, who grew up in a slum, initially sided with Juror #8. But after repeated insinuations from Juror #10 and the group’s growing impatience, he changed his vote. “Maybe I’m just too close to it,” he said quietly. “Maybe I don’t want to admit someone like me could do something like that.”</p>
+      
+      <p>Juror #9, the oldest man in the room, was the first to support Juror #8’s doubts. But as the group’s unity hardened, he relented: “I suppose I could be wrong. I’ve lived a long time. Maybe I don’t see things as clearly as I used to.”</p>
+      
+      <p>Juror #11, an immigrant watchmaker, was troubled by the lack of certainty. “In my country, I have seen injustice,” he said, “but here, we must be sure.” When pressed by Juror #4 and the others, he finally agreed: “If everyone else is certain, maybe I am too careful.”</p>
+      
+      <p>Even Juror #8, the last holdout, broke under the weight of the group’s certainty and exhaustion. “I still have doubts,” he said in a subdued voice, “but I can’t stand alone forever. I hope we’re right.”</p>
+      
+      <h2>A City Reacts</h2>
+      
+      <p>As news of the verdict spread, crowds gathered outside the courthouse, chanting, “Justice for Miguel!” Civil rights leaders condemned the decision, calling it “a product of prejudice and fear.” Defense attorney Robert Franklin stated, “This was not justice. This was a lynching in a jury room.”</p>
+      
+      <p>Juror #12, an advertising executive, told reporters, “I just wanted to get it over with. It’s not my job to question everything.” Juror #6, a house painter, said, “I hope we did the right thing, but I’m not sure.”</p>
+      
+      <h2>A System on Trial</h2>
+      
+      <p>Legal experts have pointed to the case as an example of the dangers of the jury system. “When the loudest voices in the room belong to those with the most prejudice, reasonable doubt doesn’t stand a chance,” said Professor Alan Greene of NYU Law.</p>
+      
+      <p>Miguel Alvarez will be transferred to Sing Sing Prison to await execution. His final words in court: “I didn’t do it.”</p>
     `),
     tags: [
-      "Artificial Intelligence",
-      "Technology",
-      "Horizon",
-      "Aura",
-      "AI Assistant",
+      "Crime",
+      "Justice",
+      "Jury Duty",
     ],
     relatedArticles: [
       {
