@@ -39,7 +39,7 @@ export default function ArticlePage() {
       
       <p>The prosecution’s case rested on two eyewitnesses: an elderly neighbor who claimed to have heard the murder, and a woman who said she saw the killing through a passing train. Juror #8 questioned their reliability, pointing out the old man’s limp and the woman’s poor eyesight. In a dramatic moment, he even produced a knife identical to the supposed “unique” murder weapon, showing it was easily available.</p>
       
-      <p>But in this trial, unlike the events of the play, the majority was unmoved. Juror #4, a calm, analytical stockbroker, argued, “The odds are too great for this to be a coincidence. The boy’s story doesn’t add up.” Juror #7, impatient and eager to get to a baseball game, pushed for a quick decision: “We’ve been here all day. Let’s just vote and get out.”</p>
+      <p>But in this trial, the majority was unmoved. Juror #4, a calm, analytical stockbroker, argued, “The odds are too great for this to be a coincidence. The boy’s story doesn’t add up.” Juror #7, impatient and eager to get to a baseball game, pushed for a quick decision: “We’ve been here all day. Let’s just vote and get out.”</p>
       
       <h2>How the Holdouts Fell</h2>
       
