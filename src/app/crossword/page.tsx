@@ -19,50 +19,112 @@ import { useMobile } from "@/hooks/use-mobile";
 // Sample crossword puzzle data
 const puzzleData = {
   grid: [
-    ["", "", "1", "", "", "2", "", "", ""],
-    ["", "3", "", "", "", "", "", "", ""],
-    ["4", "", "", "", "5", "", "", "", ""],
-    ["", "", "", "", "", "", "6", "", ""],
-    ["7", "", "", "", "", "", "", "", "8"],
-    ["", "", "9", "", "", "", "", "", ""],
-    ["", "", "", "", "10", "", "", "", ""],
-    ["", "", "", "", "", "", "", "", ""],
-    ["11", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", "1"],
+    ["", "2", "", "", "", "3", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "4", "", "5", "", "", "6", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", ""],
+    ["7", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "8", "", "", "", ""],
+    ["9", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", ""],
+    ["", "", "10", "", "", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", "", "", "", "", ""],
   ],
+
+  correctAnswers: [
+    ["", "", "", "", "", "", "", "", "", "", "", "r"],
+    ["", "i", "n", "t", "e", "g", "r", "i", "t", "y", "", "a"],
+    ["", "", "", "", "", "o", "", "", "", "", "", "g"],
+    ["", "", "s", "", "e", "v", "i", "d", "e", "n", "c", "e"],
+    ["", "", "c", "", "", "e", "", "o", "", "", "", ""],
+    ["b", "i", "a", "s", "", "r", "", "u", "", "", "", ""],
+    ["", "", "p", "", "", "n", "", "b", "", "", "", ""],
+    ["", "", "e", "", "", "m", "", "t", "r", "i", "a", "l"],
+    ["b", "i", "g", "o", "t", "e", "d", "", "", "", "", ""],
+    ["", "", "o", "", "", "n", "", "", "", "", "", ""],
+    ["", "", "a", "p", "a", "t", "h", "y", "", "", "", ""],
+    ["", "", "t", "", "", "", "", "", "", "", "", ""],
+  ],
+
   across: {
-    "1": { clue: "Major news organization (3)", answer: "CNN" },
-    "3": { clue: "Publication released daily (9)", answer: "NEWSPAPER" },
-    "4": { clue: "Person who reports news (9)", answer: "JOURNALIST" },
-    "7": { clue: "Short news piece (7)", answer: "ARTICLE" },
-    "9": { clue: "Front page news (8)", answer: "HEADLINE" },
-    "10": { clue: "News opinion piece (8)", answer: "EDITORIAL" },
-    "11": { clue: "Person who writes columns (9)", answer: "COLUMNIST" },
+    "2": { clue: "Moral principle that Juror 8 upheld", answer: "INTEGRITY" },
+    "5": { clue: "Juror 8 demanded more of this", answer: "EVIDENCE" },
+    "7": {
+      clue: "Prejudice against someone based on class, race, or background",
+      answer: "BIAS",
+    },
+    "8": {
+      clue: "The formal process of examining evidence in a court",
+      answer: "TRIAL",
+    },
+    "9": { clue: "Prejudiced, like Juror 10", answer: "BIGOTED" },
+    "10": {
+      clue: "Dangerous societal attitude highlighted in the play",
+      answer: "APATHY",
+    },
   },
   down: {
-    "1": { clue: "Breaking news platform (6)", answer: "CHANNEL" },
-    "2": { clue: "Visual news element (5)", answer: "PHOTO" },
-    "5": { clue: "News source (5)", answer: "MEDIA" },
-    "6": { clue: "Television news segment (6)", answer: "REPORT" },
-    "8": { clue: "News investigation (5)", answer: "STORY" },
+    "1": { clue: "Consumed by personal anger", answer: "BITTER" },
+    "3": {
+      clue: "Institution wielding power, central in Cold War and courtroom alike",
+      answer: "GOVERNMENT",
+    },
+    "4": {
+      clue: "Someone blamed to deflect from the real issue; the Rosenbergs, perhaps?",
+      answer: "SCAPEGOAT",
+    },
+    "6": {
+      clue: "Central theme of the play—opposite of certainty",
+      answer: "DOUBT",
+    },
   },
 };
 
 export default function CrosswordPage() {
   const isMobile = useMobile();
   const [userAnswers, setUserAnswers] = useState<string[][]>(
-    Array(9)
+    Array(12)
       .fill(null)
-      .map(() => Array(9).fill("")),
+      .map(() => Array(12).fill("")),
   );
   const [selectedCell, setSelectedCell] = useState<[number, number] | null>(
     null,
   );
   const [direction, setDirection] = useState<"across" | "down">("across");
   const [completed, setCompleted] = useState(false);
+  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+
+  const checkAnswers = () => {
+    const isPuzzleCorrect = userAnswers.every((row, rowIndex) =>
+      row.every(
+        (cell, colIndex) =>
+          cell.toUpperCase() ===
+          correctAnswers[rowIndex][colIndex].toUpperCase(),
+      ),
+    );
+    setIsCorrect(isPuzzleCorrect);
+  };
+
+  const correctAnswers = [
+    ["", "", "", "", "", "", "", "", "", "", "", "r"],
+    ["", "i", "n", "t", "e", "g", "r", "i", "t", "y", "", "a"],
+    ["", "", "", "", "", "o", "", "", "", "", "", "g"],
+    ["", "", "s", "", "e", "v", "i", "d", "e", "n", "c", "e"],
+    ["", "", "c", "", "", "e", "", "o", "", "", "", ""],
+    ["b", "i", "a", "s", "", "r", "", "u", "", "", "", ""],
+    ["", "", "p", "", "", "n", "", "b", "", "", "", ""],
+    ["", "", "e", "", "", "m", "", "t", "r", "i", "a", "l"],
+    ["b", "i", "g", "o", "t", "e", "d", "", "", "", "", ""],
+    ["", "", "o", "", "", "n", "", "", "", "", "", ""],
+    ["", "", "a", "p", "a", "t", "h", "y", "", "", "", ""],
+    ["", "", "t", "", "", "", "", "", "", "", "", ""],
+  ];
   const gridRefs = useRef<(HTMLInputElement | null)[][]>(
-    Array(9)
+    Array(12)
       .fill(null)
-      .map(() => Array(9).fill(null)),
+      .map(() => Array(12).fill(null)),
   );
 
   // Check if the puzzle is completed
@@ -109,13 +171,6 @@ export default function CrosswordPage() {
       const newAnswers = [...userAnswers];
       newAnswers[row][col] = "";
       setUserAnswers(newAnswers);
-
-      // Move to previous cell
-      if (direction === "across") {
-        moveToNextCell(row, col, 0, -1);
-      } else {
-        moveToNextCell(row, col, -1, 0);
-      }
     }
   };
 
@@ -130,9 +185,9 @@ export default function CrosswordPage() {
       const newAnswers = [...userAnswers];
       newAnswers[row][col] = value;
       setUserAnswers(newAnswers);
-
+      console.log(newAnswers);
       if (value !== "") {
-        // Allow user to manually navigate without automatic cursor movement
+        // sisable automatic cursor movement after typing a letter
       }
     }
   };
@@ -162,9 +217,9 @@ export default function CrosswordPage() {
   // Reset the puzzle
   const resetPuzzle = () => {
     setUserAnswers(
-      Array(9)
+      Array(12)
         .fill(null)
-        .map(() => Array(9).fill("")),
+        .map(() => Array(12).fill("")),
     );
     setSelectedCell(null);
     setCompleted(false);
@@ -249,7 +304,17 @@ export default function CrosswordPage() {
                   <Button variant="outline" size="sm" onClick={resetPuzzle}>
                     <RefreshCw className="h-4 w-4 mr-2" /> Reset
                   </Button>
-                  <Button size="sm">
+                  <Button
+                    size="sm"
+                    onClick={checkAnswers}
+                    className={
+                      isCorrect === null
+                        ? ""
+                        : isCorrect
+                          ? "bg-green-500"
+                          : "bg-red-500"
+                    }
+                  >
                     <Check className="h-4 w-4 mr-2" /> Check Answers
                   </Button>
                 </div>
@@ -260,13 +325,15 @@ export default function CrosswordPage() {
             </CardHeader>
             <CardContent>
               <div className="flex justify-center">
-                <div className="grid grid-cols-9 gap-0 border border-border">
+                <div className="grid grid-cols-12 gap-0">
                   {puzzleData.grid.map((row, rowIndex) =>
                     row.map((cell, colIndex) => (
                       <div
                         key={`${rowIndex}-${colIndex}`}
-                        className={`relative w-9 h-9 sm:w-10 sm:h-10 md:w-11 md:h-11 border border-border flex items-center justify-center ${
-                          cell === "" ? "bg-muted" : ""
+                        className={`relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 ${
+                          puzzleData.correctAnswers[rowIndex][colIndex] === ""
+                            ? "invisible"
+                            : `border border-border flex items-center justify-center ${selectedCell && selectedCell[0] === rowIndex && selectedCell[1] === colIndex ? "bg-zinc-100" : ""}`
                         }`}
                       >
                         {cell !== "" && (
@@ -274,33 +341,34 @@ export default function CrosswordPage() {
                             {cell}
                           </span>
                         )}
-                        <input
-                          ref={(el) => {
-                            gridRefs.current[rowIndex][colIndex] = el;
-                          }}
-                          type="text"
-                          maxLength={1}
-                          value={userAnswers[rowIndex][colIndex]}
-                          onChange={(e) =>
-                            handleInputChange(e, rowIndex, colIndex)
-                          }
-                          onKeyDown={(e) =>
-                            handleKeyDown(e, rowIndex, colIndex)
-                          }
-                          onClick={() => handleCellClick(rowIndex, colIndex)}
-                          className={`w-full h-full text-center font-medium bg-transparent focus:outline-none ${
-                            selectedCell &&
-                            selectedCell[0] === rowIndex &&
-                            selectedCell[1] === colIndex
-                              ? "text-primary"
-                              : cell === ""
-                                ? "text-muted-foreground"
+                        {puzzleData.correctAnswers[rowIndex][colIndex] !==
+                          "" && (
+                          <input
+                            ref={(el) => {
+                              gridRefs.current[rowIndex][colIndex] = el;
+                            }}
+                            type="text"
+                            maxLength={1}
+                            value={userAnswers[rowIndex][colIndex]}
+                            onChange={(e) =>
+                              handleInputChange(e, rowIndex, colIndex)
+                            }
+                            onKeyDown={(e) =>
+                              handleKeyDown(e, rowIndex, colIndex)
+                            }
+                            onClick={() => handleCellClick(rowIndex, colIndex)}
+                            className={`w-full h-full text-center font-medium bg-transparent focus:outline-none ${
+                              selectedCell &&
+                              selectedCell[0] === rowIndex &&
+                              selectedCell[1] === colIndex
+                                ? "text-primary"
                                 : ""
-                          }`}
-                          style={{
-                            backgroundColor: "transparent",
-                          }}
-                        />
+                            }`}
+                            style={{
+                              backgroundColor: "transparent",
+                            }}
+                          />
+                        )}
                       </div>
                     )),
                   )}
